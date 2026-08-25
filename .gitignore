@@ -1,0 +1,43 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Environment variables / secrets
+.env
+
+# Project data (raw study data must never be committed)
+data/
+All_Specimens/
+*.tdms
+
+# Generated outputs (regenerate locally, don't version)
+*.csv
+*.png
+!docs/images/*.png
+
+# Logs
+*.log

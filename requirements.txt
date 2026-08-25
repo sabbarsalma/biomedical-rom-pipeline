@@ -1,0 +1,4 @@
+nptdms
+pandas
+numpy
+matplotlib

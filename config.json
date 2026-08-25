@@ -1,0 +1,63 @@
+{
+    "root_dir": "./data",
+    "specimens": [
+        "3231_L",
+        "3231_R",
+        "3233_L",
+        "3233_R",
+        "3237_R",
+        "3241_L",
+        "3246_L",
+        "3246_R"
+    ],
+    "file_type": "processed",
+    "movement_codes": {
+        "FE_dislocation": "Flexion",
+        "ABD_dislocation": "Abduction",
+        "ADD_dislocation": "Adduction",
+        "Ext_dislocation": "Extension",
+        "ABD_Flex_dislocation": "Flexion-Abduction",
+        "ADD_Flex_dislocation": "Flexion-Adduction",
+        "ABD_Ext_dislocation": "Extension-Abduction",
+        "ADD_Ext_dislocation": "Extension-Adduction"
+    },
+    "condition_map": {
+        "BP_0": "Neutral (0°)",
+        "BP10_Radial": "10° - Radial",
+        "BP20_Radial": "20° - Radial",
+        "BP30_Radial": "30° - Radial",
+        "BP10_Dorsal": "10° - Dorsal",
+        "BP20_Dorsal": "20° - Dorsal",
+        "BP30_Dorsal": "30° - Dorsal",
+        "BP10_Ulnar": "10° - Ulnar",
+        "BP20_Ulnar": "20° - Ulnar",
+        "BP30_Ulnar": "30° - Ulnar",
+        "BP10_Volar": "10° - Volar",
+        "BP20_Volar": "20° - Volar",
+        "BP30_Volar": "30° - Volar",
+        "Native": "Native"
+    },
+    "thresholds": {
+        "drop_translation": -0.1,
+        "drop_torque_rate": -10.0,
+        "start_idx": 1000,
+        "translation_limit_mm": 4.0,
+        "torque_limit_nm": 1.0
+    },
+    "tdms_groups": {
+        "time": "Timing.Sync Trigger",
+        "kinematics": "Kinematics.JCS.Actual",
+        "load": "State.JCS Load"
+    },
+    "tdms_channels": {
+        "time": "Setpoint Time",
+        "ulnar": "Ulnar Rotation",
+        "flexion": "Flexion Angle",
+        "volar": "Volar (R) Translation",
+        "proximal": "Proximal (R) Translation",
+        "radial_trans": "Radial (R)Translation",
+        "radial_torque": "JCS Load Radial Rotation Torque",
+        "supination_torque": "JCS Load Supination Torque",
+        "extension_torque": "JCS Load Extension Torque"
+    }
+}
