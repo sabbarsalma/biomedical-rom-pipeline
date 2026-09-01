@@ -4,6 +4,8 @@ Automated Python pipeline that transforms raw robotic biomechanical test data in
 
 > Note: all data originates from cadaveric specimen testing (no patient/clinical records involved).
 
+**Skills demonstrated:** Python, signal processing, binary/TDMS data parsing, data engineering pipeline design, iterative threshold calibration & validation, technical documentation
+
 ## Context
 
 The Ottawa Hospital is investigating the optimal trapezial cup orientation for thumb CMC (carpometacarpal) joint replacement, a common site of osteoarthritis that affects up to 39% of women over 80. Correct cup positioning is critical to prevent implant dislocation, but no systematic biomechanical evidence existed to guide it.
