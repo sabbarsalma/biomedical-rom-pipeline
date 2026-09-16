@@ -1,14 +1,14 @@
-# Biomechanical Data Pipeline: Thumb CMC Arthroplasty (Ottawa Hospital)
+# Biomechanical Data Pipeline: Thumb CMC Arthroplasty
 
-Automated Python pipeline that transforms raw robotic biomechanical test data into clinical range-of-motion (ROM) tables and verification plots, built for an Honours Project (CSI 4900, University of Ottawa) in collaboration with **The Ottawa Hospital**.
+Automated Python pipeline that transforms raw robotic biomechanical test data into clinical range-of-motion (ROM) tables and verification plots, built for an Honours Project (CSI 4900, University of Ottawa) in collaboration with a partner hospital's clinical research team.
 
-> Note: all data originates from cadaveric specimen testing (no patient/clinical records involved).
+> Note: all data originates from cadaveric specimen testing (no patient/clinical records involved). The data included in this public repository has been generated to preserve confidentiality — it does not contain real specimen or patient data.
 
 **Skills demonstrated:** Python, signal processing, binary/TDMS data parsing, data engineering pipeline design, iterative threshold calibration & validation, technical documentation
 
 ## Context
 
-The Ottawa Hospital is investigating the optimal trapezial cup orientation for thumb CMC (carpometacarpal) joint replacement, a common site of osteoarthritis that affects up to 39% of women over 80. Correct cup positioning is critical to prevent implant dislocation, but no systematic biomechanical evidence existed to guide it.
+A partner hospital's clinical research team is investigating the optimal trapezial cup orientation for thumb CMC (carpometacarpal) joint replacement, a common site of osteoarthritis that affects up to 39% of women over 80. Correct cup positioning is critical to prevent implant dislocation, but no systematic biomechanical evidence existed to guide it.
 
 The hospital's team ran a robotic testing protocol across 8 cadaveric specimens, 15 surgical cup orientations, and 8 passive thumb movements, generating up to **960 individual trials**. Each trial produced a raw binary TDMS file with synchronized kinematic and load signals, and there was no existing tool to turn these files into usable clinical data.
 
@@ -52,17 +52,17 @@ Python, `nptdms`, `numpy`, `pandas`, `matplotlib`
 ## Repository structure
 
 ```
-build_full_table_v3.py     # main pipeline, processes all specimens
-verify_criteria_v3.py      # single-trial visual verification tool
-generate_all_tables.py     # formatted per-specimen pivot tables
-config.json                # thresholds, specimen list, channel mapping, paths
+build_full_table_v3.py # main pipeline, processes all specimens
+verify_criteria_v3.py # single-trial visual verification tool
+generate_all_tables.py # formatted per-specimen pivot tables
+config.json # thresholds, specimen list, channel mapping, paths
 ```
 
 ## Running it
 
 ```bash
 python build_full_table_v3.py
-python verify_criteria_v3.py   # prompts interactively for the .tdms file path and movement code
+python verify_criteria_v3.py # prompts interactively for the .tdms file path and movement code
 ```
 
 Full setup and usage instructions, including configuration reference and troubleshooting, are in [`docs/USER_GUIDE.md`](docs/USER_GUIDE.md).
@@ -76,4 +76,4 @@ Full setup and usage instructions, including configuration reference and trouble
 
 ---
 
-*Honours Project, University of Ottawa. Salma Sabbar & Dallaire Cubahiro. Supervised by Dr. Nan Chen, in collaboration with Ariane Parisien and The Ottawa Hospital.*
+*Honours Project, University of Ottawa. Salma Sabbar & Dallaire Cubahiro. Supervised by my faculty supervisor, in collaboration with a clinical research collaborator and a partner hospital.*
